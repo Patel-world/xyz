@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./CSS/style1.css">
+    <style>
+        
+    @media only screen and (max-width: 600px) {
+        .journey_main {
+    flex-direction: column;
+    width: 1000px;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 60px;
+    /* border: 2px solid #1865f2; */
+}
+body > div.journey_main > div.journey_graph_mid > img{
+ 
+    /* width: -webkit-fill-available; */
+    vertical-align: middle;
+    height: auto;
+
+}
+.journey_graph_mid {
+    display: none;
+    width: -webkit-fill-available;
+}
+.journey_graph_right1{
+    margin-left: 100px;
+}
+        .journey_graph_left .journey_graph_left1 {
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: -20px;
+}
+        .journey_graph_mid {
+    width: -webkit-fill-available;
+}
+        .method {
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    display: flex;
+    position: relative;
+    top: 120px;
+    /* padding: 10px; */
+    /* border: 2px dashed red; */
+}
+        .method .meth {
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+    top: -48px;
+    height: 160px;
+    width: 400px;
+}
+        .method .meth {
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+    top: -48px;
+    height: 160px;
+    width: 400px;
+}
+        .xzc {
+    display: none;
+    /* flex-direction: column; */
+}
+        .logo {
+    justify-content: center;
+    /* border: 2px solid red; */
+    display: flex;
+}
+        .button_journey {
+    display: block;
+    margin-left: 100px;
+    position: relative;
+    /* left: 39%; */
+    /* top: -37px; */
+    /* width: 300px; */
+    padding: 14px;
+    margin: 12px;
+    background-color: #1865f2;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button_journey1 {
+    width: fit-content;
+    display: inline-flex;
+    position: inherit;
+    /* top: -81px; */
+    /* left: 30%; */
+    margin-left: 100px;
+    /* width: 600px; */
+    padding: 12px;
+    /* margin: 12px; */
+    background-color: #1865f2;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+        .img {
+    width: -webkit-fill-available;
+}
+        .log {
+    width: 100px;
+}
+        .container_carousel .main-card_carousel .cards_carousel {
+    flex-direction: column;
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+        .main-card_carousel .cards_carousel .card_carousel {
+    margin-block-end: 2rem;
+    width: -webkit-fill-available;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+        .flip {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+}
+        .method .right {
+    width: -webkit-fill-available;
+    /* top: 9rem; */
+    position: relative;
+    top: 79px;
+    /* left: 150px; */
+}
+        img, svg {
+    width: -webkit-fill-available;
+    vertical-align: middle;
+    height: auto;
+}
+        .method .right {
+    width: -webkit-fill-available;
+    /* top: 9rem; */
+    position: relative;
+    top: 79px;
+    /* left: 150px; */
+}
+        .method .meth p {
+    max-width: 78%;
+    position: relative;
+    top: -25px;
+    left: 45px;
+    /* margin-top: -2px; */
+    font-family: Poppins;
+}
+        .method .meth h2 {
+    max-width: 75%;
+    /* margin-top: -60px; */
+    /* margin: 0; */
+    /* padding: 0; */
+    display: inline;
+    position: relative;
+    top: 3px;
+    left: 44px;
+    /* font-size: 29px; */
+    font-weight: 500;
+    color: #1865f2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+        .head-main {
+    flex-direction: column;
+    display: flex;
+    flex-shrink: inherit;
+}
+        .left-new img {
+    position: relative;
+    top: 13%;
+    width: -webkit-fill-available;
+    height: auto;
+}
+        .left-new {
+    width: -webkit-fill-available;
+}
+        .head-main .right-new {
+             width: 100%; 
+    /* border: 1px solid yellow; */
+}
+        .right-new h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    /* margin-top: 119px; */
+    /* font-weight: 500; */
+    /* font-weight: 600; */
+}
+        .right-new p {
+    text-align: center;
+    /* white-space: inherit; */
+    width: inherit;
+    /* text-align: justify; */
+    color: rgb(92, 83, 83);
+    /* font-size: 19px; */
+    margin-top: 40px;
+    font-family: Poppins;
+}
+        .wrapper {
+    margin-left: 3rem;
+    /* position: relative; */
+    /* display: inline-block; */
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    top: 50px;
+    left: 45rem;
+}
+        .right-new h1 {
+    /* text-align: justify; */
+    font-size: 2rem;
+    font-family: sans-serif;
+    /* margin-top: 119px; */
+    /* font-weight: 500; */
+    /* font-weight: 600; */
+}
+        .why_choose_us .outer_box {
+    flex-direction: column;
+    display: flex;
+    margin-top: 3rem;
+}
+    }
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1053px;
+}
+        .nav {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid heade">
+        
+        <div class="heading">
+            <div class="logo">
+            <div class="log">
+                <img src="./IMG/3d logo 5.png" alt="" height="120" width="120">
+            <h1 id="set">BAO<span class="color"> IAM</span></h1>
+            </div>
+        
+            <div class="xzc">
+                <ul class="heading1">
+                    <li><a href="#" class="margin">Features</a></li>
+                    <li><a href="#" class="margin">Testimonials</a></li>
+                    <li><a href="#" class="margin">FAQs</a></li>
+                    <li><a href="#" class="margin">Baoiam's Advantages</a></li>
+                    <button class="btn">Demo Me</button>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- =====================================mid part started====================================================== -->
+   <div class="nav">
+          <div class="img">
+        <h1>Nurture your Garden <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Be
+                Unique in Millions</span></h1>
+        <img src="./IMG/6263.jpg" alt="" width="550" height="450">
+
+    </div>
+
+    <div class="wrapper">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your Mobile number" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your State" required>
+            </div>
+            <div class="policy">
+                <input type="checkbox">
+                <h3>I accept all terms & condition</h3>
+            </div>
+            <div class="input-box button">
+                <input type="Submit" value="Register Now">
+            </div>
+        </form>
+    </div>
+</div>
+ 
+    <!-- <hr style=" color:rgb(82, 72, 72); margin-top: 140px;"> -->
+    <!-- </div>=================================================why choose us started==================================================== -->
+    <div class="why_choose_us">
+        <h2>Why We Are Here ?</h2>
+        <div class="outer_box">
+            <div class="box">
+                <img src="./IMG/Female freelancer working from home flat vector illustration.jpg" alt="" width="140" height="140">
+                <h3>Personalized learning</h3>
+                <p>Students practice at their own pace, first filling in gaps in their understanding and then
+                    accelerating their learning.</p>
+            </div>
+
+            <div class="box">
+                <img src="./IMG/4884158.jpg" alt="" id="img" width="140" height="140">
+                <h3>Trusted content</h3>
+                <p>Created by experts, BAOIAM’s library of trusted, standards-aligned practice and lessons covers math
+                    through early college.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./IMG/IMG-20220301-WA0080.jpg" alt="" width="140" height="140">
+                <h3>Adaptive Frame</h3>
+                <p>With Baoiam'ians, teachers can identify gaps in their students’ understanding, tailor instruction,
+                    and meet the needs of every student.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================Two Teacher Advantages started==================================================================== -->
+
+    <div class="head1">
+        <h1>Two Teacher Advantages</h1>
+    </div>
+    <div class="head-main">
+        <div class="left-new">
+            <img src="./IMG/IMG-20220301-WA0083.jpg" alt="" height="500" width="600">
+        </div>
+        <div class="right-new">
+            <h1>For every student, <br> Growth Matters <br> In real Scenario</h1>
+            <p>We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
+            <div class="button-main">
+                <h3 class="button-new">Learners</h3>
+                <h3 class="button-new">Teachers</h3>
+                <h3 class="button-new">Parents</h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="head1">
+        <h1>Let's Do Change</h1>
+    </div> -->
+
+
+
+
+    <!-- ======================================================================================================================================================== -->
+    -
+    <div class="method">
+
+        <div class="left">
+
+            <h3>BAOIAM's Proven<br> Academic Methodology</h3>
+            <div class="meth">
+                <span class="material-icons" id="id0" style="margin-bottom: 0.4rem;">redeem</span>
+                <h2>Designed to deliver results </h2>
+                <p>Every class is carefully designed by experts with methods that are proven to give results </p>
+            </div>
+            <div class="meth">
+                <span class="material-icons" id="id1" style="margin-bottom: 0.4rem;">
+                    auto_stories
+                </span>
+                <h2>Classes structured to learn practice-revise </h2>
+                <p>Classes are structured to help students not just learn concepts but also practice and revise them</p>
+            </div>
+            <div class="meth">
+                <span class="material-icons" id="id2" style="margin-bottom: 0.4rem;">
+                    sticky_note_2
+                </span>
+                <h2> <br> Tests, quizzes and worksheets </h2>
+                <p>Tests, quizzes and worksheets for better practice and retention </p>
+            </div>
+
+        </div>
+        <div class="right">
+            <img src="./IMG/IMG-20220301-WA0075.jpg" alt="" height="400" width="600">
+        </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    
+    <div class="heading_flip">
+        <h1> Edge of BAOIAM's Classes</h1>
+    </div>
+    <div class="flip">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./IMG/4905784.jpg" alt="" height="120" width="120">
+                    <h1>Lods of Talents</h1>
+                    <p>We love to <b>TEACH</b></p>
+                    
+                </div>
+                <div class="flip-card-back">
+
+                    <p>Concepts are explained by expert teacher with the help of rich visuals and storytelling </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./IMG/7566.jpg" alt="" height="120" width="120">
+                    <h1>Interaction Matters</h1>
+                    <p>Beleive in <b>Mental</b> Health</b></p>
+                </div>
+                <div class="flip-card-back">
+                    
+                    <p>you can confidently pose a problematic query to your teacher, and they can respond in real-time for more informed answers</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./IMG/16995.jpg" alt="" height="120" width="120">
+                    <h1>Complete and Sufficient</h1>
+                    <p>We dont let you <b>Down</b></p>
+                </div>
+                <div class="flip-card-back">
+                    
+                    <p>A complete and sufficient class gives users of the class the contract they expect-no more and no less. That's why we are <b>Here</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./IMG/5064259.jpg" alt="" height="120" width="120">
+                    <h1>Learn with APP</h1>
+                    <p>A place where you can learn with high quality <b>Videos</b> and easily <b>Accessible content</b></p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="./IMG/5064259.jpg" alt="" height="150" width="150">
+                    <a href="#">Click Here</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="heading_flip1">
+        <h1>Parents view on Us</h1>
+    </div>
+    <div class="content_carousel_main">
+        <div class="container_carousel">
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="two">
+            <div class="main-card_carousel">
+                <div class="cards_carousel">
+                    <div class="card_carousel">
+                        <div class="content_carousel">
+                            <div class="img_carousel">
+                                <img src="./IMG/smiling_face.jpg" alt="">
+                                <span class="material-icons">
+                                    play_arrow
+                                </span>
+                            </div>
+                            <div class="details">
+                                <div class="name">John, Father of</div>
+                                <div class="job">Raman|Class 6|Pune</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card_carousel">
+                        <div class="content_carousel">
+                            <div class="img_carousel">
+                                <img src="./IMG/smiling_face.jpg" alt="">
+                                <span class="material-icons">
+                                    play_arrow
+                                </span>
+                            </div>
+                            <div class="details">
+                                <div class="name">John, Father of</div>
+                                <div class="job">Raman|Class 6|Pune</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card_carousel">
+                        <div class="content_carousel">
+                            <div class="img_carousel">
+                                <img src="./IMG/smiling_face.jpg" alt="">
+                                <span class="material-icons">
+                                    play_arrow
+                                </span>--
+                            </div>
+                            <div class="details">
+                                <div class="name">John, Father of</div>
+                                <div class="job">Raman|Class 6|Pune</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_carousel">
+                    <div class="card_carousel">
+                        <div class="content_carousel">
+                            <div class="img_carousel">
+                                <img src="./IMG/smiling_face.jpg" alt="">
+                                <span class="material-icons">
+                                    play_arrow
+                                </span>
+                            </div>
+                            <div class="details">
+                                <div class="name">John, Father of</div>
+                                <div class="job">Raman|Class 6|Pune</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card_carousel">
+                        <div class="content_carousel">
+                            <div class="img_carousel">
+                                <img src="./IMG/smiling_face.jpg" alt="">
+                                <span class="material-icons">
+                                    play_arrow
+                                </span>
+                            </div>
+                            <div class="details">
+                                <div class="name">John, Father of</div>
+                                <div class="job">Raman|Class 6|Pune</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card_carousel">
+                        <div class="content_carousel">
+                            <div class="img_carousel">
+                                <img src="./IMG/smiling_face.jpg" alt="">
+                                <span class="material-icons">
+                                    play_arrow
+                                </span>
+                            </div>
+                            <div class="details">
+                                <div class="name">John, Father of</div>
+                                <div class="job">Raman|Class 6|Pune</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button_carousel">
+                <label for="one" class=" active one"></label>
+                <label for="two" class="two"></label>
+            </div>
+        </div>
+        
+    </div>
+    <div class="button_journey1">
+        <a href="#">Click Here to See all reviews</a>
+    </div>
+
+
+
+<div class="heading_flip2">
+    <h1>Student's learning journey with BAOIAM'S Classes </h1>
+</div>
+<div class="journey_main">
+    <div class="journey_graph_left">
+        
+    <div class="journey_graph_left1">
+        <h1>1</h1>
+        <h2>Person</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, amet. Cupiditate, vero.</p>
+    </div>
+    
+    <div class="journey_graph_left1">
+        <h1>3</h1>
+        <h2>Person</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, amet. Cupiditate, vero.</p>
+    </div>
+    
+    <div class="journey_graph_left1">
+        <h1>5</h1>
+        <h2>Person</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, amet. Cupiditate, vero.</p>
+    </div>
+    </div>
+    <div class="journey_graph_mid">
+    <img src="./IMG/journey_graph.png" alt="" height="600" width="200">
+    </div>
+    
+    <div class="journey_graph_right">
+    <div class="journey_graph_right1">
+        <h1>2</h1>
+        <h2>Person</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, amet. Cupiditate, vero.</p>
+    </div>
+    <div class="journey_graph_right1">
+        <h1>4</h1>
+        <h2>Person</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, amet. Cupiditate, vero.</p>
+    </div>
+    </div>
+</div>
+<div class="button_journey">
+    <a href="#">Give Us a Chance</a>
+</div>
+
+<!-- ====================================================================================================================== -->
+<div class="container-faqs">
+    <h2 class="faq-heading">Frequently asked questions</h2>
+
+    <details class="faq-card">
+      <summary>How do I pay for the Essentials or Premium plan? <span class="faq-open-icon">+</span></summary>
+      <span class="faq-card-spoiler">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare, sem at dictum faucibus, neque nunc pellentesque sem, nec pellentesque tellus ex vel lorem. Vestibulum magna odio, ornare in faucibus.</span>
+    </details>
+    <details class="faq-card">
+      <summary>Can I cancel my Essentials or Premium plan subscription at any time? <span class="faq-open-icon">+</span></summary>
+      <span class="faq-card-spoiler">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare, sem at dictum faucibus, neque nunc pellentesque sem, nec pellentesque tellus ex vel lorem. Vestibulum magna odio, ornare in faucibus.</span>
+    </details>
+    <details class="faq-card">
+      <summary>We need to add new users to our team. How will that be billed? <span class="faq-open-icon">+</span></summary>
+      <span class="faq-card-spoiler">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare, sem at dictum faucibus, neque nunc pellentesque sem, nec pellentesque tellus ex vel lorem. Vestibulum magna odio, ornare in faucibus.</span>
+    </details>
+    <details class="faq-card">
+      <summary>My team wants to cancel its subscription. How do we do that? Can we get a refund? <span class="faq-open-icon">+</span></summary>
+      <span class="faq-card-spoiler">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare, sem at dictum faucibus, neque nunc pellentesque sem, nec pellentesque tellus ex vel lorem. Vestibulum magna odio, ornare in faucibus.</span>
+    </details>
+    <details class="faq-card">
+      <summary>Do you offer discounts for non-profit organizations or educational institutions? <span class="faq-open-icon">+</span></summary>
+      <span class="faq-card-spoiler">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare, sem at dictum faucibus, neque nunc pellentesque sem, nec pellentesque tellus ex vel lorem. Vestibulum magna odio, ornare in faucibus.</span>
+    </details>
+
+    <h2 class="faq-heading">Still have questions?</h2>
+    <p class="faq-aftertext">If you cannot find answer to your question in our FAQ, you can always<br>
+      contact us. We will answer shortly!
+      <a href="#">Click here</a>
+    </p>
+  </div>
+
+
+<!------------------------footer start ----------------------------------------->
+<section id="footer" style="margin-top: 4rem; " >
+<footer class="bg-dark footer5 text-white" style="width: 100%;">
+    <div class="container" style="width: 100%; padding-left: -3rem;">
+      <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-right: 60px; margin-left: -60px;">
+              <li class="nav-item">
+                <a class="nav-link media" href="#">
+                    <span class="media">
+                      <div style="padding-top: 10px;"></div>
+                      <span class="fas fa-location-arrow mt-1 mr-2" style="margin-bottom: -10px;" ></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px; margin-top: -10px;">Address</h5>
+                        <p style="padding-top: 10px; ">
+                        28°37'44.9"N 77°22'48.4"E
+                        H-182, Second Floor, Sector 63, Noida, Uttar Pradesh 201301</p>
+                      </span>
+                    </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link media" href="tel:+91-9310143463">
+                    <span class="media">
+                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
+                      <span class="media-body">
+                        <h5 class="text-white" style="font-size: 21px; ">Talk With Us</h5>
+                        +91 1234567890
+                      </span>
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+            <h5 class="text-white" >Company</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column ">
+              <li class="nav-item "><a class="nav-link" href="#" >About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >BAOIAM Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Child saftey</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Why BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Our results</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Help India lean</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg mb-5 mb-lg-0" style="padding-left: 60px;">
+            <h5 class="text-white" >Other Links</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a class="nav-link" href="#" >Free live classes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Why teach with BAOIAM</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Try WAVE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Try Whiteboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >BAAOIAM improvement promise</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >VOLT</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Macro courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Maharastra Board</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Benefits</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" >Engineering Blog</a></li>
+
+            </ul>
+           </div>
+
+          <!-- <div class="col-6 col-md-4 col-lg">
+            <h5 class="text-white">Quick Links</h5>
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+              <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/" data-target="_blank">Facebook</a></li>
+              <li target="_blank" class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1" target="_blank">Twitter</a></li>
+              <li target="_blank" class="nav-item"><a class="nav-link" href="https://instagram.com/beaoneinamillion?utm_medium=copy_link" target="_blank">Instagram</a></li>
+              <li target="_blank" class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd" target="_blank">youtube</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-6 col-md-4 col-lg">
+            <ul class="nav nav-sm nav-x-0 nav-white flex-column" style="padding-left: 100px; margin-right: -70px;">
+              <h5 class="text-white" >Social Media Links</h5>
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/people/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF/100064896061625/"><i class="fab fa-facebook fa-2x" ></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://twitter.com/BAOIAM1"><i class="fab fa-twitter fa-2x" ></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://instagram.com/beaoneinamillion?utm_medium=copy_link"><i class="fab fa-instagram fa-2x" ></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd"><i class="fab fa-linkedin fa-2x" ></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="footer_image"src="IMG/google-play-badge.png"></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><button class="btn55" >Ask to Expert</button></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="opacity-xs my-0" style="margin-left: -60px; margin-right: -60px;">
+
+      <div class="space-1" style="padding-left: 24%; padding-right: 20%; ">
+        <div class="row align-items-md-center">
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0">
+            </div>
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            </div>
+            <!-- <p class="text-white opacity-sm small mb-0" style="opacity: .4; text-align: none;">&copy; 2022 All Rights Reserved - BOAIAM Innovations.<a> Privacy Policy</a> <a> Terms and conditions</a></p> -->
+
+            
+
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;">&copy; 2022 All Rights Reserved-BOAIAM</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Privacy Policy</p>
+            <p class="rightsPart" style="opacity: .4; text-align: none; display: inline-block;"> &nbsp; &nbsp;  Terms and conditions</p>
+
+             
+          </div>
+    </div>
+  </footer>
+</section>
+<!-------------------------footer stop --------------------------------------->
+<script src="./JS/new.js"></script>
+</body>
+
+</html>
